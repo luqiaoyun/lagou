@@ -1,0 +1,10 @@
+<div app-head text="职位详情"></div>
+<div app-basic-info position="position" cookies-name="cookiesName" cookies-is-favorite="cookiesIsFavorite" favorite="favorite()"></div>
+<div app-company-info></div>
+<pre class="position_desc">
+	<h2 class="title">职位描述</h2>
+	<div class="content">{{position.description}}</div>
+</pre>
+<div app-position-footer text="投个简历" ng-if="cookiesName"></div>
+<div app-position-footer text="去登陆" ng-hide="cookiesName" ui-sref="login"></div>
+	

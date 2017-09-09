@@ -1,0 +1,26 @@
+<div class="position_list">
+	<ul class="position_wrapper">
+		<li class="position" ng-repeat=" value in data | filterByObject :filterObject" ui-sref="position({id:value.id})">
+			<div class="left">
+				<img width="65" height="65" ng-src="{{value.imageUrl}}">
+			</div>
+			<div class="right">
+				<div class="desc">
+					<span class="companyName">{{value.companyName}}</span>
+					<span class="cityName" ng-show="value.cityName">({{value.cityName}})</span>
+					<span class="scaleName">{{value.scaleName}}</span>
+				</div>
+				<div class="salaryName">
+					<span class="text">{{value.salaryName}}</span>
+				</div>
+				<div class="date">
+					<span class="text">{{value.date}}</span>
+				</div>
+			</div>
+			<div class="favorite_wrapper" ng-show="showStar" ng-click="click(value)">
+				<span class="favorite_icon"></span>
+			</div>
+			
+		</li>
+	</ul>
+</div>

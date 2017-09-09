@@ -1,0 +1,23 @@
+<div class="app_position_class">
+	<div class="head">
+		<h5 class="title">职位分类</h5>
+		<div class="select_wrapper">
+			<ul>
+				<li ng-repeat="class in com.positionClass" class="select" ng-click="selectPositionClass(class)" ng-class="{active:select.id===class.id}">
+					<span>{{class.name}}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="position_list">
+		<ul>
+			<li ng-repeat="position in select.positionList" class="position">
+				<p class="name">{{position.name}}</p>
+				<p class="createdDate">{{position.createdDate}}</p>
+				<p class="salary">{{position.salary}}</p>
+			</li>
+		</ul>
+	</div>
+	
+
+</div>

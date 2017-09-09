@@ -1,0 +1,21 @@
+<div class="my_content" ng-show="cookiesName">
+	<div class="image_wrapper ta-c">
+		<img ng-src="{{cookiesImage}}">
+	</div>
+	<div class="username_wrapper ta-c">
+		<span class="name">{{cookiesName}}</span>
+	</div>
+	<div class="event_wrapper ta-c" >
+		<div class="event" ui-sref="post">
+			<span class="post" >投递</span>
+		</div>
+		<div class="event" ui-sref="favorite">
+			<span class="favirous">收藏</span>
+		</div>
+	</div>
+	<div class="login_out_wrapper ta-c" ng-click="loginOut()">
+		<button class="login_out">退出登录</button>	
+	</div>	
+</div>
+<div class="go_to_login ta-c " ui-sref="login" ng-hide="cookiesName">去登陆</div>
+<div app-footer></div>

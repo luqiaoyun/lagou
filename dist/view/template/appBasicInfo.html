@@ -1,0 +1,17 @@
+<div class="basic_info">
+			<div class="top">
+				<span class="name">{{position.name}}</span>
+				<span class="salaryName">{{position.salaryName}}</span>
+			</div>
+			<div class="middle">
+				<span class="cityName">{{position.cityName}}</span>
+				<span class="experience">{{position.experience}}</span>
+				<span class="education">{{position.education}}</span>
+			</div>
+			<div class="bottom">
+				<span class="benefit">{{position.benefit}}</span>
+			</div>
+			<div class="favorite_wrapper" ng-show="cookiesName" ng-click="click()">
+				<span class="favorite_icon" ng-class="{true:'favorite',false:'noFavorite'}[cookiesIsFavorite]"></span>
+			</div>
+</div>

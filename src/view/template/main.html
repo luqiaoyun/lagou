@@ -1,0 +1,11 @@
+<div class="main">
+	<div class="head" ng-hide="cookiesName">
+		<span class="desc">10秒定制职位</span>
+		<span class="go_login f-r" ui-sref="login">去登陆</span>
+	</div>
+	<div class="head" ng-show="cookiesName">
+		<span class="welcome f-r">您好！{{cookiesName}}</span>
+	</div>
+	<div app-position-list data="list"></div>
+	<div app-footer></div>
+</div>

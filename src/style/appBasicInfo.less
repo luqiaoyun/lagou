@@ -1,0 +1,43 @@
+.basic_info{
+			position: relative;
+			padding:40px 10px;
+			border-bottom: 1px solid @borderColor;
+			background-color: @whiteColor;
+			.top{
+				margin-bottom: 22px;
+				.name{
+					display: inline-block;
+					margin-right: 20px;
+				}
+				.salaryName{
+					color:@positionRed;
+				}
+			}
+			.middle{
+				margin-bottom: 22px;
+
+			}
+			.favorite_wrapper{
+				position: absolute;
+				right:30px;
+				top:40px;
+				.favorite_icon{
+					display: inline-block;
+					width:47px;
+					height:43px;
+					background-size: 47px 43px;
+					&.noFavorite{
+						background-image: url("../image/star.png");
+
+					}
+					&.favorite{
+						background-image: url("../image/star-active.png");
+
+					}
+				}
+
+
+
+			}
+			
+}

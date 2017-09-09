@@ -1,0 +1,48 @@
+.app_position_class{
+	padding:13px 9px 0 9px;
+	background-color: @whiteColor;
+	border-top: 1px solid @borderColor;
+	.head{
+		border-bottom: 1px solid @borderColor;
+		padding-bottom: 5px;
+		.title{
+			margin-bottom: 35px;
+
+		}
+		.select_wrapper{
+			.select{
+				display: inline-block;
+				padding:10px 23px;
+				border-radius: 20px;
+				background-color:@btnColor;
+				margin-right:11px;
+				&.active{
+					background-color:@btnActiveColor;
+
+				}
+			}
+
+
+		}
+	}
+		.position_list{
+			.position{
+				position: relative;
+				padding:18px 0;
+				.name{
+					margin-bottom:18px;
+				}
+				.createDate{
+
+				}
+				.salary{
+					position: absolute;
+					right:10px;
+					top:20px;
+					color:@positionRed;
+				}
+
+			}
+		}
+	
+}

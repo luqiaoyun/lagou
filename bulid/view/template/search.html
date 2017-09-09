@@ -1,0 +1,17 @@
+<div class="search_head">
+	<div class="search_head_wrapper">
+		<div class="cancel_wrapper ta-r">
+			<a class="cancel ">取消</a>
+		</div>
+		<div class="input_wrapper">
+			<input type="text" class="input va-m" placeholder="搜索职位/公司/城市">
+		</div>
+		<div class="search_wrapper">
+			<a class="search"><span class="search_icon va-m"></span>搜索</a>
+		</div>
+	</div>
+</div>
+<div app-tab list="tabList" active="activeId" tab-click="tClick(id,name)"></div>
+<div app-position-list data="list" filter-object="filterObject"></div>
+<div app-sheet visiable="visiable" list="sheetList" sheet-click="sClick(id,name)"></div>
+<div app-footer></div>

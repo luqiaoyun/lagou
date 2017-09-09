@@ -1,0 +1,28 @@
+<div class="register">
+	<div class="form_wrapper ta-c">
+		<form name="form">
+			<div class="phone_wrapper">
+				<span class="phone_icon_wrapper ta-c va-t">
+					<span class="phone_icon"></span>
+				</span>
+				<input type="text" class="phone" placeholder="输入手机号" ng-model="user.phone" validator="phone,required">
+			</div>
+			<div class="password_wrapper ">
+				<span class="password_icon_wrapper ta-c va-t">
+					<span class="password_icon"></span>
+				</span>
+				<input class="password" type="password" placeholder="输入6位以上的密码 " ng-model="user.password" validator="password,required">
+			</div>
+			<div class="message_wrapper">
+				<input type="text" class="message va-b" placeholder="短信验证码">
+				<span class="send_message " ng-click="time?1==1:send()">{{timeMsg}}</span>
+			</div>
+			<div class="login_wrapper" ui-sref="login">
+				<button class="log">登录</button>
+			</div>
+			<div class="register_wrapper" validation-submit="form" ng-click="submit()">
+				<button class="reg">注册</button>
+			</div>
+		</form>
+	</div>
+</div>

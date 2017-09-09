@@ -1,0 +1,21 @@
+{
+  "name": "lagou",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-ui-router": "ui-router#0.3.1",
+    "angular-cookies": "1.5.8",
+    "angular-validation": "1.4.2",
+    "angular-animate": "1.5.8"
+  }
+}
